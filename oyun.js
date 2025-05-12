@@ -64,7 +64,7 @@ function createCardElement(photo, index) {
     card.dataset.index = index;
     
     const frontImg = document.createElement('img');
-    frontImg.src = '../favicon.png';
+    frontImg.src = 'favicon.png';
     frontImg.dataset.photo = photo;
     
     card.appendChild(frontImg);
