@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Iverson Quiz</title>
+    <link rel="icon" href="../favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../genel.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+             <li><a href="../anasayfa.html">Anasayfa</a></li>
+            <li><a href="../kariyer.html">Kariyer Görünümü</a></li>
+            <li><a href="../biyografi.html">Biyografi</a></li>
+            <li><a href="../galeri.html">Galeri</a></li>
+            <li><a href="../oyun/oyun.html">Hafıza Oyunu</a></li>
+            <li><a href="../urunler.html">Ürünler</a></li>
+            <li><a href="../sozluk/sozluk.html">Pota Sözlük</a></li>
+           
+            <li><a href="../iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="quiz-container">
+    <div class="quiz-nav">
+        <!-- soru numaraları da js sayfasında -->
+    </div>
+
+    <div id="questions">
+        <!-- sorular js sayfasında-->
+    </div>
+
+    <div class="navigation">
+        <button id="prevBtn" onclick="previousQuestion()" style="display: none;">Geri</button>
+        <button id="nextBtn" onclick="nextQuestion()">İlerle</button>
+    </div>
+
+    <div id="score-container" style="display: none;">
+        <hr>
+        <div class="score-info">
+            <h3>Quiz Sonucu</h3>
+            <p>Toplam Puan: <span id="total-score">0</span>/100</p>
+            <p>Doğru Sayısı: <span id="correct-count">0</span></p>
+            <p>Yanlış Sayısı: <span id="wrong-count">0</span></p>
+            <p>Yanlış Sorular: <span id="wrong-questions"></span></p>
+        </div>
+    </div>
+</div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

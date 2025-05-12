@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="genel.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="anasayfa.html">Anasayfa</a></li>
+            <li><a href="kariyer.html">Kariyer Görünümü</a></li>
+            <li><a href="biyografi.html">Biyografi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="oyun/oyun.html">Hafıza Oyunu</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="sozluk/sozluk.html">Pota Sözlük</a></li>
+            <li><a href="quiz/quiz.html">Quiz</a></li>
+            
+            </ul>
+    </nav>
+
+    <div class="iletisim-container">
+        <h2>İletişim Formu</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mesajınız:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Değerlendirme:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Seçiniz</option>
+                    <option value="5">Çok İyi</option>
+                    <option value="4">İyi</option>
+                    <option value="3">Orta</option>
+                    <option value="2">Kötü</option>
+                    <option value="1">Çok Kötü</option>
+                </select>
+            </div>
+
+            <button type="submit">Gönder</button>
+        </form>
+
+        <div id="successMessage" style="display: none;">
+            <p>İletiniz alınmıştır, teşekkürler!</p>
+        </div>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="genel.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="kariyer.html">Kariyer Görünümü</a></li>
+            <li><a href="biyografi.html">Biyografi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="oyun/oyun.html">Hafıza Oyunu</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="sozluk/sozluk.html">Pota Sözlük</a></li>
+            <li><a href="quiz/quiz.html">Quiz</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            
+            </ul>
+        </ul>
+    </nav>
+    
+    <br>
+    <script>
+        var veriler = new URLSearchParams(window.location.search);
+        var ad = veriler.get("ad");
+        var soyad = veriler.get("soyad");
+        var cinsiyet = veriler.get("cinsiyet");
+        var email = veriler.get("email");
+        document.write("<h3>Hoşgeldin " + ad + " 🏀</h3>");
+    </script>
+    <br>
+    <hr>
+<h4 >Hakkımızda</h4>
+<p>
+
+Bu sayfa, NBA tarihinin en etkili ve unutulmaz oyuncularından biri olan Allen Ezail Iverson'a adanmıştır. 7 Haziran 1975 doğumlu olan Iverson, "The Answer" (Cevap) lakabıyla anılan, 14 sezon boyunca hem şutör gard hem de oyun kurucu pozisyonlarında olağanüstü performans sergilemiş Amerikalı eski profesyonel basketbolcudur.
+
+Philadelphia 76ers'ın 1996 NBA Seçmeleri'nde birinci sıradan seçtiği Iverson, NBA kariyerine hızlı bir giriş yaparak 1997'de Yılın Çaylağı ödülünü kazandı ve 11 kez All-Star seçildi. 2001 yılında NBA En Değerli Oyuncusu (MVP) seçilen Iverson, aynı sezon takımını 2001 NBA Finalleri'ne taşıyarak basketbol tarihine adını altın harflerle yazdırdı. Kariyeri boyunca dört kez sayı kralı olan Iverson, maç başına 26,7 sayı ortalamasıyla NBA tarihinin en skorer oyuncularından biridir.
+
+Sadece saha içindeki başarılarıyla değil, aynı zamanda zorluklarla dolu hayat hikayesiyle de ilham kaynağı olan Iverson, genç yaşta karşılaştığı zorluklara rağmen azmi ve kararlılığıyla basketbolun efsaneleri arasına girmiştir. Kısa boyuna rağmen yüreği ve mücadeleci ruhuyla "Yürek Boydan Üstündür" sözünü kanıtlamış, saha içindeki cesareti ve stil ikonu haline gelen dirsek kolluğu gibi aksesuarlarıyla da iz bırakan bir oyuncudur.
+
+Kariyerinin son dönemlerinde Denver Nuggets, Detroit Pistons ve Memphis Grizzlies gibi takımlarda forma giymiş, 2010-2011 sezonunda ise Türkiye'nin köklü kulüplerinden Beşiktaş Cola Turka'da oynayarak kariyerini burada tamamlamıştır. Iverson, 2016 yılında Naismith Memorial Basketball Hall of Fame'e kabul edilerek basketbol dünyasındaki yerini taçlandırmıştır.
+
+Bu sayfa, Allen Iverson'un unutulmaz kariyerini, saha içi başarılarını ve hayat hikayesini sevenleriyle paylaşmak, efsaneye olan hayranlığı ve saygıyı yaşatmak amacıyla oluşturulmuştur.</p>
+</body>
+</html>
